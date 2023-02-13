@@ -31,6 +31,7 @@ regsvr32 "C:\path\to\ContextMenuHijack.dll"
 > if you want to uninstall it just use `/u` flag
 ```powershell
 regsvr32 /u "C:\path\to\ContextMenuHijack.dll"
+```
 
 - this technique can be easily detected from the thread stack of `explorer.exe`, it is up to you to use your own evasion tradecraft 
 ![image](https://user-images.githubusercontent.com/75935486/212399032-3249579d-fff5-42e7-b18b-b3e7d13efaad.png)
