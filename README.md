@@ -20,11 +20,17 @@ IFACEMETHODIMP FileContextMenuExt::Initialize( LPCITEMIDLIST pidlFolder, LPDATAO
 }
 ```
 
-Usage : This persistence trick needs admin privs.
+### Usage
+
+You just have to load the solution file (.sln) and build it. It's important to know that you need **adminstrator privileges** to use this persistence technique. Once you have done all of this, you just have to register the DLL file in the registry with `regsvr32`:
+
 ```powershell
 regsvr32 "C:\path\to\ContextMenuHijack.dll"
 ```
+
 > if you want to uninstall it just use `/u` flag
+```powershell
+regsvr32 /u "C:\path\to\ContextMenuHijack.dll"
 
 - this technique can be easily detected from the thread stack of `explorer.exe`, it is up to you to use your own evasion tradecraft 
 ![image](https://user-images.githubusercontent.com/75935486/212399032-3249579d-fff5-42e7-b18b-b3e7d13efaad.png)
