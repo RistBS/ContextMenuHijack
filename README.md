@@ -33,6 +33,9 @@ regsvr32 "C:\path\to\ContextMenuHijack.dll"
 regsvr32 /u "C:\path\to\ContextMenuHijack.dll"
 ```
 
+![persistence1](https://user-images.githubusercontent.com/75935486/225428627-e6cc9601-5664-4b19-8d5c-7a4bdf5b01dd.gif)
+
+
 - this technique can be easily detected from the thread stack of `explorer.exe`, it is up to you to use your own evasion tradecraft 
 ![image](https://user-images.githubusercontent.com/75935486/212399032-3249579d-fff5-42e7-b18b-b3e7d13efaad.png)
 
